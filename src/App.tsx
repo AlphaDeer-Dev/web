@@ -7,6 +7,11 @@ import Account from "./pages/Account/Account";
 import Register from "./pages/Account/Register";
 import Login from "./pages/Account/Login";
 import ChangePassword from "./pages/Account/ChangePassword";
+import AiLearn from "./pages/AiLearn/AiLearn";
+import AiTool from "./pages/AiTool/AiTool";
+import AiResearch from "./pages/AiResearch/AiResearch";
+import AiWelfare from "./pages/AiWelfare/AiWelfare";
+import AiJournal from "./pages/AiJournal/AiJournal";
 
 function App() {
   const params = new URLSearchParams(window.location.search);
@@ -29,7 +34,12 @@ function App() {
     "/account": <Account setRoute={setRoute} login={login} setLogin={setLogin} username={username} setUsername={setUsername} />,
     "/register": <Register setRoute={setRoute} login={login} setLogin={setLogin} username={username} setUsername={setUsername} />,
     "/login": <Login setRoute={setRoute} login={login} setLogin={setLogin} username={username} setUsername={setUsername} />,
-    "/changePassword": <ChangePassword setRoute={setRoute} login={login} setLogin={setLogin} username={username} setUsername={setUsername} />
+    "/changePassword": <ChangePassword setRoute={setRoute} login={login} setLogin={setLogin} username={username} setUsername={setUsername} />,
+    "/aiLearn": <AiLearn />,
+    "/aiTool": <AiTool />,
+    "/aiResearch": <AiResearch />,
+    "/aiWelfare": <AiWelfare />,
+    "/aiJournal": <AiJournal />
   }
   return (
     <FluentProvider style={{
