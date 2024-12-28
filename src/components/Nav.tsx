@@ -58,16 +58,12 @@ export default function (props: {
                 }}>
                     <Button appearance="subtle" size="large" shape="square" onClick={toggleExpand} icon={props.expand ? <ChevronLeftFilled /> : <ChevronRightFilled />} />
                     <TopNav onClick={() => { props.setRoute("/") }}>AlphaDeer</TopNav>
+                    <TopNav onClick={() => { props.setRoute("/aiLearn") }}>AI Learning</TopNav>
+                    <TopNav onClick={() => { props.setRoute("/aiTool") }}>AI Tool</TopNav>
+                    <TopNav onClick={() => { props.setRoute("/aiResearch") }}>AI Research</TopNav>
+                    <TopNav onClick={() => { props.setRoute("/aiWelfare") }}>AI Welfare</TopNav>
+                    <TopNav onClick={() => { props.setRoute("/aiJournal") }}>AI Journal</TopNav>
                 </div>
-
-                {/* <div style={{
-                    flex: 1,
-                    textAlign: "center"
-                }}>
-                    <div style={{
-                        userSelect: "none"
-                    }}><Text>{server}</Text></div>
-                </div> */}
 
                 <div style={{
                     flex: 1,
@@ -90,11 +86,6 @@ export default function (props: {
             }}>
                 <SideNav onClick={() => { props.setRoute("/") }}>Home</SideNav>
                 <SideNav onClick={() => { props.setRoute(props.login ? "/account" : "/login") }}>Account</SideNav>
-                <SideNav onClick={() => { props.setRoute("/aiLearn") }}>AI Learning</SideNav>
-                <SideNav onClick={() => { props.setRoute("/aiTool") }}>AI Tool</SideNav>
-                <SideNav onClick={() => { props.setRoute("/aiResearch") }}>AI Research</SideNav>
-                <SideNav onClick={() => { props.setRoute("/aiWelfare") }}>AI Welfare</SideNav>
-                <SideNav onClick={() => { props.setRoute("/aiJournal") }}>AI Journal</SideNav>
             </div>
         </>
     )
